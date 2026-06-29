@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetroLink - Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <div class="header">
+      <a href="index.html" class="logo">M</a>
+      <div class="iconos-header">
+        <a href="tarifas.html" title="Tarifas">💲</a>
+        <a href="servicios.html" title="Servicios">🛎️</a>
+        <a href="contacto.html" title="Contacto">💬</a>
+        <a href="faq.html" title="Preguntas frecuentes">ℹ️</a>
+      </div>
+    </div>
+
+    <div class="titulo-pagina">
+      <h1>Contacto</h1>
+    </div>
+
+    <div class="bloque">
+      <h2>Dejanos tu mensaje</h2>
+
+        <form class="formulario" onsubmit="enviarMensaje(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit" class="boton-enviar">Enviar</button>
+      </form>
+
+      <p id="mensajeEnviado" class="oculto" style="color: #2E7D32; margin-top: 10px; text-align: center;">
+        ¡Mensaje enviado correctamente!
+      </p>
+    </div>
+
+    <div class="bloque">
+      <div class="tarjetas-contacto">
+        <div class="tarjeta">
+          <div class="tarjeta-icono">📧</div>
+          <strong>Email</strong>
+          <p>info@metrolink.ar</p>
+        </div>
+        <div class="tarjeta">
+          <div class="tarjeta-icono">📞</div>
+          <strong>Teléfono</strong>
+          <p>0800-123-METRO</p>
+        </div>
+        <div class="tarjeta">
+          <div class="tarjeta-icono">💬</div>
+          <strong>WhatsApp</strong>
+          <p>+54 9 11 0000-0000</p>
+        </div>
+        <div class="tarjeta">
+          <div class="tarjeta-icono">📍</div>
+          <strong>Oficinas</strong>
+          <p>Av. Central 1234</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="botones-rapidos">
+      <a href="tarifas.html" class="boton-rapido">Tarifas</a>
+      <a href="horarios.html" class="boton-rapido">Horarios</a>
+    </div>
+
+    <a href="estaciones.html" class="boton-ancho">Estaciones</a>
+
+    <div class="lineas-transporte">
+      <h3>Líneas de transporte:</h3>
+      <div class="fila-lineas">
+        <a href="./lineas/linea a/linea-a.html" class="badge-linea linea-a">A</a>
+        <a href="#" class="badge-linea linea-b">B</a>
+        <a href="#" class="badge-linea linea-c">C</a>
+        <a href="#" class="badge-linea linea-d">D</a>
+        <a href="#" class="badge-linea linea-e">E</a>
+        <a href="#" class="badge-linea linea-h">H</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-grid">
+        <div class="footer-columna">
+          <div class="footer-logo">M</div>
+          <p class="footer-marca">MetroLink</p>
+          <p class="footer-desc">Red de subte de Nueva Costera. 6 líneas, 72 estaciones y 80 km bajo la ciudad.</p>
+        </div>
+        <div class="footer-columna">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="estaciones.html">Estaciones</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+          </ul>
+        </div>
+        <div class="footer-columna">
+          <h4>Contacto</h4>
+          <p>📞 0800-333-METRO</p>
+          <p>✉️ info@metrolink.com.ar</p>
+          <p>🕐 Lun–Dom: 5:00 – 23:00</p>
+          <p>🚨 Emergencias: 0800-METRO-SOS</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MetroLink · Nueva Costera</span>
+        <span>Todos los derechos reservados</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

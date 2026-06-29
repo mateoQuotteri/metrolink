@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetroLink - Horarios</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <div class="header">
+      <a href="index.html" class="logo">M</a>
+      <div class="iconos-header">
+        <a href="tarifas.html" title="Tarifas">💲</a>
+        <a href="servicios.html" title="Servicios">🛎️</a>
+        <a href="contacto.html" title="Contacto">💬</a>
+        <a href="faq.html" title="Preguntas frecuentes">ℹ️</a>
+      </div>
+    </div>
+
+    <div class="titulo-pagina">
+      <h1>Horarios</h1>
+    </div>
+
+    <div class="bloque">
+      <h2>Consultá tu línea</h2>
+      <div class="formulario">
+        <label for="buscarLinea">Buscá una línea o estación:</label>
+        <input type="text" id="buscarLinea" placeholder="Ej: Línea A, Plaza de Mayo...">
+        <button class="boton-enviar" onclick="buscarHorario()">Buscar</button>
+      </div>
+
+      <table class="tabla-simple" style="margin-top: 15px;">
+        <thead>
+          <tr>
+            <th>Línea y sentido</th>
+            <th>Primero / Último</th>
+          </tr>
+        </thead>
+        <tbody id="tablaHorarios">
+          <tr>
+            <td>
+              <div class="estacion-item">
+                <div class="badge-pequeno linea-a">A</div>
+                <div class="estacion-info">
+                  <strong>Plaza de Mayo</strong>
+                  <span>Sentido San Pedrito</span>
+                </div>
+              </div>
+            </td>
+              <td class="estacion-hora">05:30 - 23:00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="estacion-item">
+                <div class="badge-pequeno linea-b">B</div>
+                <div class="estacion-info">
+                  <strong>L. N. Alem</strong>
+                  <span>Sentido J. M. Rosas</span>
+                </div>
+              </div>
+            </td>
+            <td class="estacion-hora">05:30 - 23:00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="estacion-item">
+                <div class="badge-pequeno linea-c">C</div>
+                <div class="estacion-info">
+                  <strong>Retiro</strong>
+                  <span>Sentido Constitución</span>
+                </div>
+              </div>
+            </td>
+            <td class="estacion-hora">05:30 - 23:00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="#" class="boton-enviar" style="display: block; text-align: center; text-decoration: none; margin-top: 15px;">
+        Ver todos los horarios
+      </a>
+    </div>
+
+    <div class="bloque">
+      <div class="card-info">
+        <div class="icono">ℹ️</div>
+        <h4>Informacion</h4>
+        <p>Los horarios marcados con (*) corresponden a servicios especiales extendidos durante fines de semana.</p>
+      </div>
+
+      <div class="card-info">
+        <div class="icono">⚠️</div>
+        <h4>Estado</h4>
+        <p>Línea D con demora de 10 minutos por obras programadas en la estación Bulnes.</p>
+      </div>
+    </div>
+
+    <div class="botones-rapidos">
+      <a href="tarifas.html" class="boton-rapido">Tarifas</a>
+      <a href="contacto.html" class="boton-rapido">Contacto</a>
+    </div>
+
+    <a href="estaciones.html" class="boton-ancho">Estaciones</a>
+
+    <div class="lineas-transporte">
+      <h3>Líneas de transporte:</h3>
+      <div class="fila-lineas">
+        <a href="./lineas/linea a/linea-a.html" class="badge-linea linea-a">A</a>
+        <a href="#" class="badge-linea linea-b">B</a>
+        <a href="#" class="badge-linea linea-c">C</a>
+        <a href="#" class="badge-linea linea-d">D</a>
+        <a href="#" class="badge-linea linea-e">E</a>
+        <a href="#" class="badge-linea linea-h">H</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-grid">
+        <div class="footer-columna">
+          <div class="footer-logo">M</div>
+          <p class="footer-marca">MetroLink</p>
+          <p class="footer-desc">Red de subte de Nueva Costera. 6 líneas, 72 estaciones y 80 km bajo la ciudad.</p>
+        </div>
+        <div class="footer-columna">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="estaciones.html">Estaciones</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+          </ul>
+        </div>
+        <div class="footer-columna">
+          <h4>Contacto</h4>
+          <p>📞 0800-333-METRO</p>
+          <p>✉️ info@metrolink.com.ar</p>
+          <p>🕐 Lun–Dom: 5:00 – 23:00</p>
+          <p>🚨 Emergencias: 0800-METRO-SOS</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MetroLink · Nueva Costera</span>
+        <span>Todos los derechos reservados</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

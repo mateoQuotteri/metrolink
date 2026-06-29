@@ -1,0 +1,882 @@
+/* MetroLink - Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1E5AA8;
+  color: #222222;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contenedor {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #1E5AA8;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.header {
+  background-color: #1E5AA8;
+  padding: 20px 15px 10px 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-color: white;
+  color: #1E5AA8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.iconos-header {
+  display: flex;
+  gap: 14px;
+  color: white;
+  font-size: 22px;
+}
+
+.iconos-header a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.titulo-pagina {
+  background-color: white;
+  margin: 10px 15px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.titulo-pagina h1 {
+  color: #1E5AA8;
+  font-size: 28px;
+}
+
+.titulo-pagina p {
+  color: #666666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.hero-imagen {
+  margin: 10px 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-imagen img {
+  width: 100%;
+  display: block;
+}
+ .fila-desktop {
+  width: 80%;
+  margin: auto;
+  }
+
+.bloque {
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.bloque h2 {
+  color: #1E5AA8;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bloque h3 {
+  color: #1E5AA8;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.bloque p {
+  color: #444444;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.bloque ul {
+  padding-left: 20px;
+  color: #444444;
+  font-size: 14px;
+}
+
+.bloque ul li {
+  margin-bottom: 4px;
+}
+
+.botones-rapidos {
+  display: flex;
+  gap: 10px;
+  margin: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boton-rapido {
+  background-color: white;
+  color: #1E5AA8;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  min-width: 90px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.boton-rapido:hover {
+  background-color: #f0f0f0;
+}
+
+.boton-ancho {
+  display: block;
+  background-color: white;
+  color: #1E5AA8;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: calc(100% - 30px);
+}
+
+.boton-ancho:hover {
+  background-color: #f0f0f0;
+}
+
+.lineas-transporte {
+  margin: 20px 15px 10px 15px;
+}
+
+.lineas-transporte h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.fila-lineas {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.badge-linea {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.linea-a { background-color: #3B8BEB; }
+.linea-b { background-color: #D32F2F; }
+.linea-c { background-color: #2E7D32; }
+.linea-d { background-color: #F9A825; }
+.linea-e { background-color: #6A1B9A; }
+.linea-h { background-color: #F57C00; }
+
+/* Footer */
+.footer {
+  background-color: #0d1b2a;
+  color: #cdd5e0;
+  margin-top: 30px;
+  padding: 0;
+  border-top: 4px solid #1E5AA8;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 32px 20px;
+}
+
+.footer-columna h4 {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #1e3a5f;
+}
+
+.footer-logo {
+  width: 44px;
+  height: 44px;
+  background-color: #1E5AA8;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-marca {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 8px 0;
+}
+
+.footer-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8a9ab5;
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #8a9ab5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-columna p {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #8a9ab5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e3a5f;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #5a6a7e;
+  text-align: center;
+}
+
+/* Formularios */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formulario label {
+  font-size: 14px;
+  color: #444444;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.boton-enviar {
+  background-color: #1E5AA8;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.boton-enviar:hover {
+  background-color: #154480;
+}
+
+/* Tarjetas de contacto */
+.tarjetas-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.tarjeta {
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 12px;
+  color: #444444;
+}
+
+.tarjeta-icono {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Tablas */
+.tabla-simple {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.tabla-simple th,
+.tabla-simple td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.tabla-simple th {
+  background-color: #f4f4f4;
+  color: #444444;
+  font-weight: bold;
+}
+
+/* Lista de estaciones */
+.estacion-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.estacion-item:last-child {
+  border-bottom: none;
+}
+
+.badge-pequeno {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.estacion-info {
+  flex: 1;
+}
+
+.estacion-info strong {
+  display: block;
+  font-size: 14px;
+}
+
+.estacion-info span {
+  font-size: 12px;
+  color: #888888;
+}
+
+.estacion-hora {
+  font-size: 12px;
+  color: #666666;
+}
+
+/* Resultado de consulta de viajes */
+.resultado {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.resultado h3 {
+  color: #1E5AA8;
+  margin-bottom: 10px;
+}
+
+.resultado-dato {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #dddddd;
+  font-size: 14px;
+}
+
+.resultado-dato:last-child {
+  border-bottom: none;
+}
+
+.resultado-dato strong {
+  color: #444444;
+}
+
+.oculto {
+  display: none;
+}
+
+/* FAQ */
+.pregunta {
+  background-color: #f4f4f4;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pregunta-titulo {
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1E5AA8;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pregunta-respuesta {
+  padding: 0 12px 12px 12px;
+  font-size: 13px;
+  color: #444444;
+  display: none;
+}
+
+.pregunta.abierta .pregunta-respuesta {
+  display: block;
+}
+
+/* Mapa del centro */
+.mapa-terminal {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.zona-mapa {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border-left: 4px solid #1E5AA8;
+  font-size: 13px;
+}
+
+.zona-mapa strong {
+  color: #1E5AA8;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Servicios */
+.servicio-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.servicio-item:last-child {
+  border-bottom: none;
+}
+
+.servicio-icono {
+  font-size: 24px;
+  margin-right: 12px;
+  width: 35px;
+  text-align: center;
+}
+
+.servicio-info {
+  flex: 1;
+}
+
+.servicio-info strong {
+  display: block;
+  font-size: 14px;
+  color: #1E5AA8;
+}
+
+.servicio-info span {
+  font-size: 12px;
+  color: #666666;
+}
+
+/* Info y estado (tipo card con icono) */
+.card-info {
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-info .icono {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.card-info h4 {
+  color: #1E5AA8;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.card-info p {
+  color: #666666;
+  font-size: 12px;
+}
+
+/* Tarifas */
+.tabla-tarifa {
+  background-color: white;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.tabla-tarifa h3 {
+  color: #1E5AA8;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.fila-tarifa {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 13px;
+}
+
+.fila-tarifa:last-child {
+  border-bottom: none;
+}
+
+.precio {
+  font-weight: bold;
+  color: #1E5AA8;
+}
+
+.descuento {
+  color: #2E7D32;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+/* Beneficio frecuente */
+.beneficio {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.beneficio:last-child {
+  border-bottom: none;
+}
+
+.beneficio-porcentaje {
+  background-color: #1E5AA8;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 12px;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.beneficio-texto {
+  font-size: 13px;
+  color: #444444;
+}
+
+/* Navegación inferior simple */
+.nav-inferior {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-inferior a {
+  color: #1E5AA8;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.nav-inferior a:hover {
+  text-decoration: underline;
+}
+
+/* =================== RESPONSIVE =================== */
+
+/* Tablets */
+@media (min-width: 768px) {
+  .contenedor {
+    max-width: 720px;
+  }
+
+  .titulo-pagina h1 {
+    font-size: 32px;
+  }
+
+  .tarjetas-contacto {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .botones-rapidos {
+    flex-wrap: nowrap;
+  }
+
+  /* Bloques más amplios */
+  .bloque {
+    padding: 25px;
+  }
+
+  /* Badges de línea más grandes */
+  .badge-linea {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  /* Header más ancho */
+  .header {
+    padding: 25px 25px 15px 25px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .iconos-header {
+    gap: 18px;
+    font-size: 24px;
+  }
+
+  .iconos-header a {
+    font-size: 24px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  /* Fondo azul ocupando todo */
+  body {
+    background-color: #1E5AA8;
+  }
+
+  /* Contenedor ocupa el 100% del ancho */
+  .contenedor {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    min-height: 100vh;
+    padding: 0 0 30px 0;
+  }
+
+  /* Header con íconos más grandes */
+  .header {
+    padding: 25px 40px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .iconos-header {
+    gap: 22px;
+    font-size: 32px;
+  }
+
+  .iconos-header a {
+    font-size: 32px;
+  }
+
+  /* Elementos internos sin margen lateral - aprovechan todo el ancho */
+  .titulo-pagina {
+    margin: 15px 0;
+    border-radius: 0;
+    padding: 30px;
+  }
+
+  .titulo-pagina h1 {
+    font-size: 48px;
+  }
+
+  .hero-imagen {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .bloque {
+    padding: 30px 40px;
+  }
+
+  .contenedor > .bloque {
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 8px;
+  }
+
+  .bloque h2 {
+    font-size: 22px;
+  }
+
+  /* Filas de bloques (2 columnas) en desktop */
+  .fila-desktop {
+    display: flex;
+    gap: 2px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .fila-desktop .bloque {
+    flex: 1;
+    margin: 15px 0;
+  }
+
+  /* Formulario centrado dentro del bloque */
+  .bloque .formulario {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Botones rápidos full width */
+  .botones-rapidos {
+    margin: 15px 40px;
+    gap: 15px;
+  }
+
+  .boton-rapido {
+    padding: 18px 30px;
+    font-size: 16px;
+  }
+
+  /* Botón ancho full width */
+  .boton-ancho {
+    margin: 15px 40px;
+    max-width: none;
+    width: auto;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  /* Hero imagen */
+  .hero-imagen img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Tarjetas de contacto más amplias */
+  .tarjeta {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .tarjeta-icono {
+    font-size: 36px;
+  }
+
+  /* Líneas de transporte */
+  .lineas-transporte {
+    margin: 30px 40px;
+  }
+
+  .lineas-transporte h3 {
+    font-size: 18px;
+  }
+
+  .badge-linea {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 12px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 50px 10%;
+    gap: 60px;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 10%;
+  }
+}

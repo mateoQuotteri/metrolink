@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetroLink - Servicios</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <div class="header">
+      <a href="index.html" class="logo">M</a>
+      <div class="iconos-header">
+        <a href="tarifas.html" title="Tarifas">💲</a>
+        <a href="servicios.html" title="Servicios">🛎️</a>
+        <a href="contacto.html" title="Contacto">💬</a>
+        <a href="faq.html" title="Preguntas frecuentes">ℹ️</a>
+      </div>
+    </div>
+
+    <div class="titulo-pagina">
+      <h1>Servicios</h1>
+      <p>Todos los servicios disponibles en la terminal MetroLink.</p>
+    </div>
+
+    <div class="bloque">
+      <h2>Servicios disponibles</h2>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">🚻</div>
+        <div class="servicio-info">
+          <strong>Baños públicos</strong>
+          <span>Planta baja y primer piso · Abiertos las 24 hs</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">ℹ️</div>
+        <div class="servicio-info">
+          <strong>Oficina de Información</strong>
+          <span>Planta baja, sector central · Lun a Dom de 06:00 a 23:00</span>
+        </div>
+      </div>
+
+        <div class="servicio-item">
+        <div class="servicio-icono">🍔</div>
+        <div class="servicio-info">
+          <strong>Locales gastronomicos</strong>
+          <span>Patio de comidas, primer piso · Lun a Dom de 07:00 a 23:00</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">🪑</div>
+        <div class="servicio-info">
+          <strong>Áreas de espera</strong>
+          <span>En cada andén · Disponibles las 24 hs</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">🅿️</div>
+        <div class="servicio-info">
+          <strong>Estacionamiento</strong>
+          <span>Subsuelo · Lun a Dom de 05:30 a 00:00</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">🏥</div>
+        <div class="servicio-info">
+          <strong>Primeros auxilios</strong>
+          <span>Planta baja, junto a la oficina de información · 24 hs</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">🛍️</div>
+        <div class="servicio-info">
+          <strong>Locales comerciales</strong>
+          <span>Planta baja y primer piso · Lun a Sáb de 09:00 a 21:00</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">📶</div>
+        <div class="servicio-info">
+          <strong>WiFi gratuito</strong>
+          <span>En toda la terminal · Red: MetroLink-Free</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">♿</div>
+        <div class="servicio-info">
+          <strong>Servicios accesibles</strong>
+          <span>Ascensores, rampas y baños accesibles en todos los sectores</span>
+        </div>
+      </div>
+
+      <div class="servicio-item">
+        <div class="servicio-icono">🎫</div>
+        <div class="servicio-info">
+          <strong>Venta y recarga SUBE</strong>
+          <span>Planta baja, en cada acceso · Lun a Dom de 06:00 a 23:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <h2>¿Necesitás ayuda?</h2>
+      <p>Hacenos una pregunta rápida y te respondemos al toque.</p>
+
+      <div class="formulario">
+        <label for="preguntaChat">Tu pregunta:</label>
+        <input type="text" id="preguntaChat" placeholder="Ej: ¿Dónde están los baños?">
+        <button class="boton-enviar" onclick="responderChat()">Preguntar</button>
+      </div>
+
+      <div id="respuestaChat" class="resultado oculto">
+        <p id="textoRespuesta"></p>
+      </div>
+
+      <p style="margin-top: 15px; font-size: 12px; color: #666666; text-align: center;">
+        ¿No encontrás lo que buscás? Visitá las <a href="faq.html" style="color: #1E5AA8;">preguntas frecuentes</a>.
+      </p>
+    </div>
+
+    <a href="mapa.html" class="boton-ancho">Ver mapa de la terminal</a>
+
+    <div class="footer">
+      <div class="footer-grid">
+        <div class="footer-columna">
+          <div class="footer-logo">M</div>
+          <p class="footer-marca">MetroLink</p>
+          <p class="footer-desc">Red de subte de Nueva Costera. 6 líneas, 72 estaciones y 80 km bajo la ciudad.</p>
+        </div>
+        <div class="footer-columna">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="estaciones.html">Estaciones</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+          </ul>
+        </div>
+        <div class="footer-columna">
+          <h4>Contacto</h4>
+          <p>📞 0800-333-METRO</p>
+          <p>✉️ info@metrolink.com.ar</p>
+          <p>🕐 Lun–Dom: 5:00 – 23:00</p>
+          <p>🚨 Emergencias: 0800-METRO-SOS</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MetroLink · Nueva Costera</span>
+        <span>Todos los derechos reservados</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

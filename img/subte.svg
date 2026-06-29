@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+
+  <!-- Cielo / fondo de estación -->
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2a2a"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="vagon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2870c8"/>
+      <stop offset="0.5" stop-color="#1E5AA8"/>
+      <stop offset="1" stop-color="#143d72"/>
+    </linearGradient>
+    <radialGradient id="faro" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff8b0"/>
+      <stop offset="0.6" stop-color="#ffd700"/>
+      <stop offset="1" stop-color="#aa8800" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo de túnel/estación -->
+  <rect width="600" height="400" fill="url(#fondo)"/>
+
+  <!-- Andén lateral (izquierdo) -->
+  <polygon points="0,320 180,300 180,400 0,400" fill="#5c5c5c"/>
+  <polygon points="0,320 180,300 180,310 0,330" fill="#7a7a7a"/>
+
+  <!-- Andén lateral (derecho) -->
+  <polygon points="600,320 420,300 420,400 600,400" fill="#5c5c5c"/>
+  <polygon points="600,320 420,300 420,310 600,330" fill="#7a7a7a"/>
+
+  <!-- Vías -->
+  <polygon points="180,310 420,310 420,400 180,400" fill="#2a2a2a"/>
+  <line x1="220" y1="320" x2="380" y2="320" stroke="#666" stroke-width="3"/>
+  <line x1="225" y1="345" x2="375" y2="345" stroke="#555" stroke-width="3"/>
+  <line x1="230" y1="370" x2="370" y2="370" stroke="#444" stroke-width="3"/>
+
+  <!-- Durmientes -->
+  <rect x="260" y="328" width="80" height="4" fill="#3a2a1a"/>
+  <rect x="255" y="350" width="90" height="5" fill="#3a2a1a"/>
+  <rect x="248" y="372" width="104" height="6" fill="#3a2a1a"/>
+
+  <!-- Techo / arco del túnel -->
+  <path d="M 80 0 Q 300 -20 520 0 L 520 80 Q 300 50 80 80 Z" fill="#0a0a0a" opacity="0.6"/>
+
+  <!-- Líneas de iluminación del techo -->
+  <line x1="100" y1="40" x2="500" y2="40" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="150" y1="60" x2="450" y2="60" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- VAGÓN PRINCIPAL (frente del subte saliendo del túnel) -->
+  <!-- Sombra del vagón en el piso -->
+  <ellipse cx="300" cy="390" rx="180" ry="10" fill="black" opacity="0.4"/>
+
+  <!-- Cuerpo principal del vagón con perspectiva -->
+  <polygon points="190,150 410,150 430,380 170,380" fill="url(#vagon)" stroke="#0d3878" stroke-width="2"/>
+
+  <!-- Techo del vagón -->
+  <polygon points="190,150 410,150 405,160 195,160" fill="#143d72"/>
+
+  <!-- Parabrisas (ventana frontal grande) -->
+  <polygon points="220,175 380,175 390,250 210,250" fill="#9bbfe0" opacity="0.85"/>
+  <polygon points="220,175 380,175 380,180 220,180" fill="#5588bb"/>
+
+  <!-- Reflejo del parabrisas -->
+  <polygon points="225,180 280,180 260,240 215,240" fill="white" opacity="0.15"/>
+
+  <!-- Marco del parabrisas -->
+  <polygon points="215,170 385,170 390,180 210,180" fill="#0d3878"/>
+  <line x1="300" y1="175" x2="300" y2="248" stroke="#0d3878" stroke-width="2"/>
+
+  <!-- Frente inferior (donde van las luces y el número) -->
+  <polygon points="210,260 390,260 410,360 190,360" fill="#1E5AA8"/>
+
+  <!-- Faros laterales (luces encendidas) -->
+  <circle cx="235" cy="295" r="18" fill="url(#faro)"/>
+  <circle cx="235" cy="295" r="10" fill="#fff8b0"/>
+  <circle cx="235" cy="295" r="5" fill="white"/>
+
+  <circle cx="365" cy="295" r="18" fill="url(#faro)"/>
+  <circle cx="365" cy="295" r="10" fill="#fff8b0"/>
+  <circle cx="365" cy="295" r="5" fill="white"/>
+
+  <!-- Logo MetroLink en el frente -->
+  <circle cx="300" cy="310" r="22" fill="white"/>
+  <text x="300" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1E5AA8">M</text>
+
+  <!-- Número de formación abajo -->
+  <rect x="278" y="345" width="44" height="14" fill="#0d3878" rx="2"/>
+  <text x="300" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">A-127</text>
+
+  <!-- Detalles de la carrocería: líneas horizontales -->
+  <line x1="200" y1="260" x2="400" y2="260" stroke="#0d3878" stroke-width="1.5"/>
+  <line x1="195" y1="370" x2="405" y2="370" stroke="#0d3878" stroke-width="2"/>
+
+  <!-- Limpiaparabrisas -->
+  <line x1="240" y1="248" x2="270" y2="200" stroke="#0a0a0a" stroke-width="2"/>
+  <line x1="360" y1="248" x2="330" y2="200" stroke="#0a0a0a" stroke-width="2"/>
+
+  <!-- Ruedas (parcialmente visibles) -->
+  <ellipse cx="220" cy="378" rx="12" ry="6" fill="#0a0a0a"/>
+  <ellipse cx="380" cy="378" rx="12" ry="6" fill="#0a0a0a"/>
+
+  <!-- Cartel de estación arriba -->
+  <rect x="40" y="100" width="120" height="35" fill="#1E5AA8" stroke="white" stroke-width="2" rx="4"/>
+  <text x="100" y="123" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">PLAZA CENTRAL</text>
+
+  <!-- Cartel de la línea -->
+  <circle cx="500" cy="115" r="22" fill="#3B8BEB" stroke="white" stroke-width="2"/>
+  <text x="500" y="123" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">A</text>
+
+  <!-- Luz ambiental del andén (reflejo) -->
+  <ellipse cx="100" cy="330" rx="60" ry="8" fill="white" opacity="0.06"/>
+  <ellipse cx="500" cy="330" rx="60" ry="8" fill="white" opacity="0.06"/>
+
+</svg>

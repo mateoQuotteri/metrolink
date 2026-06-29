@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetroLink - Consulta de Viajes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <div class="header">
+      <a href="index.html" class="logo">M</a>
+      <div class="iconos-header">
+        <a href="tarifas.html" title="Tarifas">💲</a>
+        <a href="servicios.html" title="Servicios">🛎️</a>
+        <a href="contacto.html" title="Contacto">💬</a>
+        <a href="faq.html" title="Preguntas frecuentes">ℹ️</a>
+      </div>
+    </div>
+
+    <div class="titulo-pagina">
+      <h1>Consultá tu viaje</h1>
+      <p>Elegí origen y destino para ver tu mejor opción de viaje.</p>
+    </div>
+
+    <div class="bloque">
+      <h2>Planificá tu viaje</h2>
+
+      <div class="formulario">
+        <label for="origen">Estación de origen:</label>
+        <select id="origen">
+          <option value="">-- Elegí una estación --</option>
+          <option value="Plaza de Mayo">Plaza de Mayo</option>
+          <option value="Moreno">Moreno</option>
+          <option value="San Pedrito">San Pedrito</option>
+          <option value="L. N. Alem">L. N. Alem</option>
+          <option value="Carlos Pellegrini">Carlos Pellegrini</option>
+          <option value="J. M. Rosas">J. M. Rosas</option>
+          <option value="Retiro">Retiro</option>
+          <option value="Av. de Mayo">Av. de Mayo</option>
+          <option value="Constitución">Constitución</option>
+          <option value="Catedral">Catedral</option>
+          <option value="9 de Julio">9 de Julio</option>
+          <option value="Congreso de Tucumán">Congreso de Tucumán</option>
+          <option value="Bolívar">Bolívar</option>
+          <option value="Plaza de los Virreyes">Plaza de los Virreyes</option>
+          <option value="Facultad de Medicina">Facultad de Medicina</option>
+          <option value="Caseros">Caseros</option>
+          <option value="Hospitales">Hospitales</option>
+        </select>
+
+        <label for="destino">Estación de destino:</label>
+        <select id="destino">
+          <option value="">-- Elegí una estación --</option>
+          <option value="Plaza de Mayo">Plaza de Mayo</option>
+          <option value="Moreno">Moreno</option>
+          <option value="San Pedrito">San Pedrito</option>
+          <option value="L. N. Alem">L. N. Alem</option>
+          <option value="Carlos Pellegrini">Carlos Pellegrini</option>
+          <option value="J. M. Rosas">J. M. Rosas</option>
+          <option value="Retiro">Retiro</option>
+          <option value="Av. de Mayo">Av. de Mayo</option>
+          <option value="Constitución">Constitución</option>
+          <option value="Catedral">Catedral</option>
+          <option value="9 de Julio">9 de Julio</option>
+          <option value="Congreso de Tucumán">Congreso de Tucumán</option>
+          <option value="Bolívar">Bolívar</option>
+          <option value="Plaza de los Virreyes">Plaza de los Virreyes</option>
+          <option value="Facultad de Medicina">Facultad de Medicina</option>
+          <option value="Caseros">Caseros</option>
+          <option value="Hospitales">Hospitales</option>
+        </select>
+
+        <button class="boton-enviar" onclick="consultarViaje()">Buscar viaje</button>
+      </div>
+
+      <!-- Mensaje de error -->
+      <p id="mensajeError" class="oculto" style="color: #D32F2F; margin-top: 10px; text-align: center;"></p>
+
+      <!-- Resultado del viaje -->
+      <div id="resultadoViaje" class="resultado oculto">
+        <h3>Tu viaje recomendado</h3>
+
+        <div class="resultado-dato">
+          <strong>Origen:</strong>
+          <span id="resOrigen"></span>
+        </div>
+        <div class="resultado-dato">
+          <strong>Destino:</strong>
+          <span id="resDestino"></span>
+        </div>
+          <div class="resultado-dato">
+          <strong>Transporte recomendado:</strong>
+          <span id="resTransporte"></span>
+        </div>
+        <div class="resultado-dato">
+          <strong>Plataforma / Andén:</strong>
+          <span id="resAnden"></span>
+        </div>
+        <div class="resultado-dato">
+          <strong>Tiempo estimado:</strong>
+          <span id="resTiempo"></span>
+        </div>
+        <div class="resultado-dato">
+          <strong>Costo estimado:</strong>
+          <span id="resCosto"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-grid">
+        <div class="footer-columna">
+          <div class="footer-logo">M</div>
+          <p class="footer-marca">MetroLink</p>
+          <p class="footer-desc">Red de subte de Nueva Costera. 6 líneas, 72 estaciones y 80 km bajo la ciudad.</p>
+        </div>
+        <div class="footer-columna">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="estaciones.html">Estaciones</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+          </ul>
+        </div>
+        <div class="footer-columna">
+          <h4>Contacto</h4>
+          <p>📞 0800-333-METRO</p>
+          <p>✉️ info@metrolink.com.ar</p>
+          <p>🕐 Lun–Dom: 5:00 – 23:00</p>
+          <p>🚨 Emergencias: 0800-METRO-SOS</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 MetroLink · Nueva Costera</span>
+        <span>Todos los derechos reservados</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
